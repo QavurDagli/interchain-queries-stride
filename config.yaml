@@ -1,0 +1,33 @@
+default_chain: stride-testnet
+chains:
+  stride-testnet:
+    key: skyking
+    chain-id: STRIDE-TESTNET-4
+    rpc-addr: http://127.0.0.1:16657      # use your own Stride GRPC endpoint here
+    grpc-addr: http://0.0.0.0:16090     # use your own Stride GRPC endpoint here
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001ustrd
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  gaia-testnet:
+    key: skyking
+    chain-id: GAIA
+    rpc-addr: http://176.57.184.59:23657       # use your own Gaia RPC endpoint here
+    grpc-addr: http://176.57.184.59:23090     # use your own Gaia GRPC endpoint here
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001uatom
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
